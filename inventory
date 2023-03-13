@@ -1,4 +1,4 @@
-localhost ansible_user=prateek
+172.17.0.1 ansible_user=prateek
 
 [ubuntu22]
-172.16.131.201 ansible_user=john
+172.17.0.2 ansible_user=john
