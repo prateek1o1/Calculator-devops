@@ -1,0 +1,4 @@
+localhost ansible_user=prateek
+
+[ubuntu22]
+172.16.131.201 ansible_user=john
