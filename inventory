@@ -1,4 +1,8 @@
-172.17.0.1 ansible_user=prateek
+[Developer]
+client1 ansible_host=172.17.0.2 ansible_connection=ssh ansible_user=john ansible_sudo_pass=jammy@123
 
-[ubuntu22]
-172.17.0.2 ansible_user=john
+[Test]
+client2 ansible_host=172.17.0.3 ansible_connection=ssh ansible_user=john ansible_sudo_pass=jammy@123
+
+[Deploy]
+client2 ansible_host=172.17.0.2 ansible_connection=ssh ansible_user=john ansible_sudo_pass=jammy@123
