@@ -1,5 +1,2 @@
 [ubuntu]
 localhost ansible_user=prateek
-
-[remote]
-172.17.0.1 ansible_user=john
