@@ -11,4 +11,4 @@
       shell: docker pull prateek1o1/calculator
 
     - name: running container
-      shell: docker run -it -d prateek1o1/calculator /bin/bash
+      shell: docker run -it -d prateek1o1/calculator
