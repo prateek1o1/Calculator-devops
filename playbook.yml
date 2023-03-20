@@ -1,14 +1,19 @@
 ---
-- name: Pull docker image of Calculator
+- name: Deploy Docker Image to Container
   hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   tasks:
-    - name: Start docker service
-      service:
-        name: docker
+    - name: Pull Docker Image
+      docker_image:
+        name: prateek1o1/calculator
+        tag: latest
+        source: pull
+
+    - name: Create & Start Calculator Docker Container
+      docker_container:
+        name: calculator-using-devops
+        image: prateek1o1/calculator
         state: started
-
-    - name: pull docker image
-      shell: docker pull prateek1o1/calculator
-
-    - name: running container
-      shell: docker run -it -d prateek1o1/calculator
+        tty: yes
+        interactive: yes
