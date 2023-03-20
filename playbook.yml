@@ -12,7 +12,7 @@
 
     - name: Create & Start Calculator Docker Container
       docker_container:
-        name: calculator-using-devops
+        name: calculator
         image: prateek1o1/calculator
         state: started
         tty: yes
