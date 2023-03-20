@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Pull') {
             steps {
-                git 'https://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@github.com/prateek1o1/calculator-devops.git'
+                git 'https://github.com/prateek1o1/calculator-devops.git'
             }
         }
          
