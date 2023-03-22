@@ -1,4 +1,4 @@
-Hello Guys
+Hello Guy
 1 (a). What is DevOps?
  
 DevOps (Development Operations) is a software development approach that aims to bring together software development (Dev) and IT operations (Ops) teams to collaborate more effectively and efficiently throughout the software development life cycle (Software Development Life Cycle). The goal of DevOps is to automate and streamline the development and deployment process, allowing organizations to deliver high-quality software more quickly and reliably.
